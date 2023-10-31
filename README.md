@@ -1,8 +1,8 @@
+# LitCritique
+
+# Funcionalidades
+
+# Tecnologias Utilizadas
+
 # Aluna
-Ana Beatriz de Lima Grigorim
-
-# Nome do app
-LitCritique
-
-# Informaçãos Importantes
-
+Ana Beatriz de Lima Grigorim RA2374951

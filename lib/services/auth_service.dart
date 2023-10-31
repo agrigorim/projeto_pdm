@@ -2,8 +2,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class AuthException implements Exception {
-  String message;
-  AuthException(this.message);
+  String mensagem;
+  AuthException(this.mensagem);
 }
 
 class AuthService extends ChangeNotifier {

@@ -1,9 +1,13 @@
 class Livro {
   final int _id;
-  String _titulo;
-  String _nomeAutor;
-  int _anoPublicacao;
-  String _editora;
+  final String _titulo;
+  final String _nomeAutor;
+  final int _anoPublicacao;
+  final String _editora;
+  String _sinopse = '';
+  List<String> _generos = [];
+  List<String> _idiomas = [];
+  List<String> _tags = [];
 
   Livro(
       {required int id,
@@ -22,9 +26,12 @@ class Livro {
   String getNomeAutor() => this._nomeAutor;
   int getAnoPublicacao() => this._anoPublicacao;
   String getEditora() => this._editora;
-  void setTitulo(String titulo) => this._titulo = titulo;
-  void setNomeAutor(String nomeAutor) => this._nomeAutor = nomeAutor;
-  void setAnoPublicacao(int anoPublicacao) =>
-      this._anoPublicacao = anoPublicacao;
-  void setEditora(String editora) => this._editora = editora;
+  String getSinopse() => this._sinopse;
+  List<String> getGeneros() => this._generos;
+  List<String> getIdiomas() => this._idiomas;
+  List<String> getTags() => this._tags;
+  void setSinopse(String sinopse) => this._sinopse = sinopse;
+  void setGeneros(List<String> generos) => this._generos = generos;
+  void setIdiomas(List<String> idiomas) => this._idiomas = idiomas;
+  void setTags(List<String> tags) => this._tags = tags;
 }

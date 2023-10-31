@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "555507780838",
+    "firebase_url": "https://projeto-pdm-a34a1-default-rtdb.firebaseio.com",
+    "project_id": "projeto-pdm-a34a1",
+    "storage_bucket": "projeto-pdm-a34a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:555507780838:android:76f551fed981d97ffebf27",
+        "android_client_info": {
+          "package_name": "com.example.projeto_pdm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdrlKNngUao5unpsPljflOMy7Z4CIbkiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
