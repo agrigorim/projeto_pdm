@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-
 import 'package:projeto_pdm/pages/home_page.dart';
 import 'package:projeto_pdm/pages/login_page.dart';
 import 'package:projeto_pdm/services/auth_service.dart';

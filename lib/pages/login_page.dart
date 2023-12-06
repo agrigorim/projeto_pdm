@@ -17,12 +17,32 @@ class _LoginPageState extends State<LoginPage> {
   final senha = TextEditingController();
   final GlobalKey<NavigatorState> _navigator = GlobalKey<NavigatorState>();
 
+  bool isLogin = true;
+  late String titulo;
+  late String actionButton;
+  late String toggleButton;
   bool loading = false;
   bool logged = false;
 
   @override
   void initState() {
     super.initState();
+    setFormAction(true);
+  }
+
+  setFormAction(bool acao) {
+    setState(() {
+      isLogin = acao;
+      if (isLogin) {
+        titulo = 'Bem vindo';
+        actionButton = 'Login';
+        toggleButton = 'Ainda não tem conta? Cadastre-se agora.';
+      } else {
+        titulo = 'Crie sua conta';
+        actionButton = 'Cadastrar';
+        toggleButton = 'Voltar ao Login.';
+      }
+    });
   }
 
   login() async {

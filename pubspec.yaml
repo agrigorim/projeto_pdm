@@ -1,5 +1,5 @@
 name: projeto_pdm
-description: A new Flutter project.
+description: Um aplicativo para que leitores encontrem novos livros de maneira mais fácil, apresentando reviews de outros leitores, gêneros e tags correspondentes aos livros cadastrados na plataforma.
 
 publish_to: 'none'
 
@@ -17,6 +17,8 @@ dependencies:
   provider: ^6.0.5
   cloud_firestore: ^4.12.2
   sqflite: ^2.3.0
+  hive_flutter: ^1.1.0
+  path_provider: ^2.1.1
 
 dev_dependencies:
   flutter_test:

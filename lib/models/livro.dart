@@ -31,7 +31,10 @@ class Livro {
   List<String> getIdiomas() => this._idiomas;
   List<String> getTags() => this._tags;
   void setSinopse(String sinopse) => this._sinopse = sinopse;
-  void setGeneros(List<String> generos) => this._generos = generos;
-  void setIdiomas(List<String> idiomas) => this._idiomas = idiomas;
-  void setTags(List<String> tags) => this._tags = tags;
+  void adicionarGenero(String genero) => this._generos.add(genero);
+  void removerGenero(String genero) => this._generos.remove(genero);
+  void adicionarIdioma(String idioma) => this._idiomas.add(idioma);
+  void removerIdioma(String idioma) => this._idiomas.remove(idioma);
+  void adicionarTag(String tag) => this._tags.add(tag);
+  void removerTag(String tag) => this._tags.remove(tag);
 }

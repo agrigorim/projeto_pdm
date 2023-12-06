@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_pdm/pages/cadastro_page.dart';
+import 'package:projeto_pdm/pages/login_page.dart';
 import 'package:provider/provider.dart';
 
 class HomePage extends StatefulWidget {
@@ -26,6 +28,30 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return Scaffold(
+      body: PageView(
+        controller: pc,
+        children: [
+          LoginPage(),
+          CadastroPage(),
+        ],
+        onPageChanged: setPaginaAtual,
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: paginaAtual,
+        type: BottomNavigationBarType.fixed,
+        items: [
+          BottomNavigationBarItem(icon: Icon(Icons.list), label: 'Login'),
+          BottomNavigationBarItem(icon: Icon(Icons.star), label: 'Cadastro'),
+        ],
+        onTap: (pagina) {
+          pc.animateToPage(
+            pagina,
+            duration: Duration(milliseconds: 400),
+            curve: Curves.ease,
+          );
+        },
+      ),
+    );
   }
 }
